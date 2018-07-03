@@ -47,7 +47,7 @@ if ERRORLEVEL 1  (
   call npm install -g download-cli
 )
 if not exist "LICENSE" (
-  download -e -s 1 -o . %APPURL%
+  call download -e -s 1 -o . %APPURL%
   call npm i
   pause
   exit
@@ -58,7 +58,7 @@ if not exist "node_modules" (
   exit
 )
 if "%1" == "update" (
-  download -e -s 1 -o . %APPURL%
+  call download -e -s 1 -o . %APPURL%
   call npm i
   pause
   exit

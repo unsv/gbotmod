@@ -1,11 +1,16 @@
 @echo off
 
+REM Установочный файл GBOT с примером конфига
 REM -------------
 
 SET KEY=*******
 SET SECRET=*********
 
-SET EXCHANGE=wex
+SET EXCHANGE=demo
+
+SET DEMO_EXCHANGE=poloniex
+SET BALANCE_COIN=0
+SET BALANCE_COIN_TWO=0.05
 
 SET NAME_COIN=LTC
 SET NAME_COIN_TWO=BTC
